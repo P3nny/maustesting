@@ -1,0 +1,11 @@
+{
+  "name": "codecept",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:P3nny/maustesting.git",
+  "author": "p3nny <p3nny@hacking.studio>",
+  "license": "MIT",
+  "scripts": {
+    "test": "codeceptjs run --steps"
+  }
+}
