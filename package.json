@@ -7,5 +7,9 @@
   "license": "MIT",
   "scripts": {
     "test": "codeceptjs run --steps"
+  },
+  "devDependencies": {
+    "codeceptjs": "^2.0.4",
+    "puppeteer": "^1.12.2"
   }
 }
