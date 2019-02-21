@@ -18,3 +18,10 @@ Scenario('green flag', (I) => {
     I.wait(10)
 });
 
+Scenario('drag block', I => {
+    I.amReturningVisitor()
+    I.amOnPage('/projekt/neu')
+    I.dragBlock('motion_turnright')
+    I.dragBlock('motion_changexby', 1)
+    I.wait(1)
+});

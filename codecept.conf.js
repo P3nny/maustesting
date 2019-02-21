@@ -13,6 +13,9 @@ exports.config = {
         },
       },
     },
+    MyPuppeteer: {
+      require: "./util/mypuppeteer_helper.js",
+    },
   },
   include: {
     I: './util/common.js'

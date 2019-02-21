@@ -5,4 +5,7 @@ module.exports = () => actor({
       localStorage.setItem('hasVisited', 'yes');
     });
   },
+  dragBlock: async function(id, num = 0) {
+    await this.dragToWorkspace(`[data-id=${id}]`, num);
+  },
 });
