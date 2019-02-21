@@ -1,13 +1,12 @@
-
 Feature('Load/GreenFlag/Save');
 
-Scenario('test welcome screen', (I) => {
-    I.amOnPage('https://programmieren.wdrmaus.de');
+Scenario('welcome screen', (I) => {
+    I.amOnPage('/')
     I.seeInCurrentUrl('/welcome')
-    I.seeInTitle('Programmieren mit der Maus');
-    I.say('Willkommen läuft');
+    I.seeInTitle('Programmieren mit der Maus')
+    I.say('Willkommen läuft')
     I.click('Lernen, wie es geht')
-    I.amOnPage('/lernspiel/00')
+    I.seeInCurrentUrl('/lernspiel/00')
 });
 
 Scenario('test green flag', (I) => {
