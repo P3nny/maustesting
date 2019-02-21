@@ -9,11 +9,11 @@ Scenario('welcome screen', (I) => {
     I.seeInCurrentUrl('/lernspiel/00')
 });
 
-Scenario('test green flag', (I) => {
-    I.amOnPage('https://programmieren.wdrmaus.de');
-    I.see('Programmieren mit der Maus');
-    I.click('Lernen, wie es geht')
+Scenario('green flag', (I) => {
+    I.amReturningVisitor()
     I.amOnPage('/lernspiel/00')
+    I.click('Weiter')
+    I.wait(1)
     I.click('[title=Los]')
     I.wait(10)
 });
