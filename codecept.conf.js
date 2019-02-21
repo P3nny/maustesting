@@ -1,5 +1,5 @@
 exports.config = {
-  tests: './*_test.js',
+  tests: './tests/**/*.js',
   output: './output',
   helpers: {
     Puppeteer: {
@@ -8,7 +8,7 @@ exports.config = {
     }
   },
   include: {
-    I: './steps_file.js'
+    I: './util/common.js'
   },
   bootstrap: null,
   mocha: {},
