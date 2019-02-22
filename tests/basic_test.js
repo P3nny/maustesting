@@ -40,4 +40,5 @@ Scenario('drag block', I => {
     I.dragBlock('motion_changexby', 2)
     I.wait(1)
     I.stopRecording()
+    I.convertRecording('drag-blocks')
 });
