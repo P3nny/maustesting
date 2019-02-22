@@ -18,10 +18,23 @@ Scenario('green flag', (I) => {
     I.wait(10)
 });
 
+const recordOpts = {
+    name: 'drag-blocks',
+    interval: 100, // ms
+    clip: {
+        x: 80,
+        y: 150,
+        width: 620,
+        height: 400,
+    },
+};
+
 Scenario('drag block', I => {
     I.amReturningVisitor()
     I.amOnPage('/projekt/neu')
-    I.dragBlock('motion_turnright')
-    I.dragBlock('motion_changexby', 1)
+    I.startRecording(recordOpts)
+    I.dragBlock('motion_turnright', 1)
+    I.dragBlock('motion_changexby', 2)
     I.wait(1)
+    I.stopRecording()
 });
