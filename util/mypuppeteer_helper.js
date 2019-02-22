@@ -58,11 +58,11 @@ class MyPupeteer extends Helper {
     const element = elements[0];
 
     const { x, y, width, height } = await element.boundingBox();
-    const mouseX = x+width/2;
-    const mouseY = y+height/2;
+    const mouseX = x + 20;
+    const mouseY = y + height/2;
     await mouse.move(mouseX, mouseY);
     await mouse.down();
-    await mouse.move(startX, startY + (blockH*num));
+    await mouse.move(startX, startY + (blockH*num), { steps: 100 });
     await mouse.up();
   }
 }
