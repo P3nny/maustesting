@@ -5,7 +5,11 @@ module.exports = () => actor({
       localStorage.setItem('hasVisited', 'yes');
     });
   },
-  dragBlock: async function(id, num = 0) {
-    await this.dragToWorkspace(`[data-id=${id}]`, num);
+  dragBlock: function(id, num = 0) {
+    this.dragToWorkspace(`[data-id=${id}]`, num);
+  },
+  selectCategory: function(name) {
+    this.click(`.scratchCategoryId-${name}`)
+    this.wait(1)
   },
 });
