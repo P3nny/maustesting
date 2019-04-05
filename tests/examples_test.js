@@ -37,15 +37,6 @@ Scenario('beispiel04', (I) => {
     I.wait(1)
 });
 
-Scenario('beispiel05', (I) => {
-    I.amReturningVisitor()
-    I.amOnPage('/lernspiel/beispiel05')
-    I.click('Weiter')
-    I.wait(1)
-    I.click('[title=Los]')
-    I.wait(1)
-});
-
 Scenario('beispiel06', (I) => {
     I.amReturningVisitor()
     I.amOnPage('/lernspiel/beispiel06')
@@ -76,15 +67,6 @@ Scenario('beispiel08', (I) => {
 Scenario('beispiel09', (I) => {
     I.amReturningVisitor()
     I.amOnPage('/lernspiel/beispiel09')
-    I.click('Weiter')
-    I.wait(1)
-    I.click('[title=Los]')
-    I.wait(1)
-});
-
-Scenario('beispiel10', (I) => {
-    I.amReturningVisitor()
-    I.amOnPage('/lernspiel/beispiel10')
     I.click('Weiter')
     I.wait(1)
     I.click('[title=Los]')

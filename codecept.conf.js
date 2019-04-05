@@ -3,7 +3,7 @@ exports.config = {
   output: './output',
   helpers: {
     Puppeteer: {
-      url: 'https://staging.code4maus.wt.wdr.cloud',
+      url: 'localhost:8601',
       show: true,
       chrome: {
         defaultViewport: {
